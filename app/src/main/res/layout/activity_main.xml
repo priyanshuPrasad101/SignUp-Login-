@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:background="@drawable/background_color"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="45dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/signing_avatar"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/profile_icon"
+        android:layout_marginTop="35dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edittext_outline"
+            android:paddingStart="15dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingStart="15dp"
+            android:hint="password"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edittext_outline"
+            android:layout_marginTop="25dp"
+            android:inputType="numberPassword"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont have an Account ?"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/create_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create One"
+                android:layout_toRightOf="@+id/text2"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0532D6"/>
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Sign In"
+            android:background="@drawable/button_layout"/>
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="OR"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/otherMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="SignUp using "
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/mobile"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/mobile_icon"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/google"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/google_iconn"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

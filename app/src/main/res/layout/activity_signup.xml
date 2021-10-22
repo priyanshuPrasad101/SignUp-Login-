@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignupActivity"
+    android:background="@drawable/background_color">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/signUp"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/signup"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill in all the details "
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signUp"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_outline"
+        android:paddingStart="15dp"
+        android:layout_below="@+id/text"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_outline"
+        android:paddingStart="15dp"
+        android:layout_below="@+id/username"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_outline"
+        android:paddingStart="15dp"
+        android:layout_below="@+id/password"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_below="@id/confirm_password"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_layout"/>
+
+
+
+</RelativeLayout>
